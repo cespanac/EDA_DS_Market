@@ -1,19 +1,18 @@
 ## HIPOTESIS
 
-Desde que empecé el bootcamp me ha surgido la duda de cuanto mercado de oferta hay en España para este sector.
+Desde que empecé el bootcamp me ha surgido la duda de cuanta oferta laboral hay en España para este sector.
 
-Se dice que mucho, pero no sé cuanto, ni en que sitios es más demandado, aunque está claro que las grandes ciudades siempre van a tener mucho peso pero, ¿es un trabajo que se puede realizar desde cualquier lugar de España?
+Me interesa conocer en que sitios es más demandado ¿es un trabajo que se puede realizar desde cualquier lugar de España?
 
-¿Es trabajo de alto valor? Es decir, ¿son contratos temporales o fijos? ¿Jornada parcial o completa? ¿Otros bonus que puedan interesar?
+¿Es trabajo de alto valor? Es decir, ¿son contratos temporales o fijos? ¿Jornada parcial o completa?
 
-¿Qué diferentes puestos se ofertan? ¿Qué skills se piden? ¿Saldremos capacitados para lo que demanda el sector? ¿O las personas con experiencia en ingienería tienen mucha ventaja? ¿Qué requesitos se piden?
+¿Qué diferentes puestos se ofertan? ¿Qué skills y requesitos más se solicitan?
 
-¿Y los alumnos de The Bridge y Iron Hack? ¿Realmente encuentran trabajo una vez salen?
 
 ### DATOS A ANALIZAR
 
 
-DATOS
+**DATOS**
 
 Top
 - Puesto
@@ -36,14 +35,6 @@ Bottom
 - Sector
 - Tipo de empleo
 - Funciones laborales
-
-
-**BONUS**
-PERFILES ESTUDIANTES
-
-- Buscar los que coincidan con estudiantes de The Bridge.
-
-- Exportar su puesto actual.
 
 
 **ANÁLISIS**

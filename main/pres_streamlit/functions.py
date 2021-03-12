@@ -1,31 +1,42 @@
 import streamlit as st
 from PIL import Image
 
-def config_page():
-    st.set_page_config(page_title='Data Analyst & Scientist research', page_icon=':electric_plug:', layout="wide")
 
-csv_path = 'data/map_jobs.csv'
+def config_page():
+    st.set_page_config(page_title='Data Analyst & Scientist research', page_icon=':electric_plug:',
+                       layout="wide",
+                       initial_sidebar_state="auto")
+
+
+csv_path = 'data/map_jobs2.csv'
+
 
 def home():
 
-    st.markdown('<div align=center>Esta página está desarrollada con fines académicos.</div>\n', unsafe_allow_html=True)
+    st.markdown('<div align=center>Esta página está desarrollada con fines académicos.</div>\n',
+                unsafe_allow_html=True)
 
-    img = Image.open('data/ejercicios.png')
+    st.text("")
+
+    img = Image.open('data/big_data.jpg')
     st.image(img, use_column_width='auto')
 
     st.markdown('''\n
-        ### Su **objetivo** es desarrollar un EDA sobre el mercado laboral de Data Analyst y Scientist en España.\n
+        ### Este EDA tiene la finalidad de intentar entender el mercado laboral de Data Analyst\
+         y Data Scientist.
+        Para esta ocasión se ha determinado buscar el dataset a través de la red social LinkedIn,\
+        creando una base de datos para posteriormente analizarla y sacar las conclusiones.
+         
         Se divide en tres pestañas:\n
         - **Principal**: presentación del proyecto.\n
         - **Gráficos**: análisis del dato exploratorio.\n
         - **Filtros**: comprobación de la tabla de datos para la búsqueda de información.
                 ''')
 
-
-    with st.beta_expander('Expande para ver'):
-        st.write(
-            'Ante el problema climático actual, los coches eléctricos se están convirtiendo en\
-             una solución factible')
+    with st.beta_expander('Basado en los roles Data Analyst y Data Scientist. Pincha para más\
+     información'):
+        img_job_types = Image.open('data/job_types.png')
+        st.image(img_job_types, use_column_width='auto')
 
 
 def filtros(df_jobs):
@@ -50,7 +61,7 @@ def filtros(df_jobs):
     max_carg = df_jobs['Nº Solicitudes'].max()
     n_posibles = range(max_carg + 1)
     filtro_solicitudes = st.sidebar.select_slider('Selecciona el nº máximo de solicitudes.',
-                                                 n_posibles, value=(max_carg))
+                                                  n_posibles, value=max_carg)
 
     if check_puesto:
         df_jobs = df_jobs.loc[df_jobs['Tipo puesto'] == filtro_puesto, :]
@@ -71,5 +82,3 @@ def filtros(df_jobs):
     if df_jobs.shape[0] == 0:
         st.warning('No existen empresas')
         st.stop()
-
-    st.write(df_jobs)
