@@ -22,7 +22,7 @@ if menu == 'Gráficos':
 
         st.map(df_jobs)
 
-        st.markdown('''#### Teniendo en cuenta que hay analizados 1000 puestos, la gran mayoría se\
+        st.markdown('''#### Teniendo en cuenta todos los puestos analizados, la gran mayoría se\
                     se concentran en las dos capitales más importantes.''')
 
         graph_npuestos_ciudad = gph.graph_npuestos_ciudad(gph.df)
@@ -93,4 +93,3 @@ if menu == 'Gráficos':
 
 if menu == 'Filtros':
     ft.filtros(df_jobs)
-    st.write(df_jobs)

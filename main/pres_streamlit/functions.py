@@ -13,7 +13,7 @@ csv_path = 'data/map_jobs2.csv'
 
 def home():
 
-    st.markdown('<div align=center>Esta página está desarrollada con fines académicos.</div>\n',
+    st.markdown('<div align=center></div>\n',
                 unsafe_allow_html=True)
 
     st.text("")
@@ -33,8 +33,7 @@ def home():
         - **Filtros**: comprobación de la tabla de datos para la búsqueda de información.
                 ''')
 
-    with st.beta_expander('Basado en los roles Data Analyst y Data Scientist. Pincha para más\
-     información'):
+    with st.beta_expander('Basado en los roles Data Analyst y Data Scientist.'):
         img_job_types = Image.open('data/job_types.png')
         st.image(img_job_types, use_column_width='auto')
 
@@ -78,6 +77,7 @@ def filtros(df_jobs):
     if check_solicitudes:
         mask2 = df_jobs['Nº Solicitudes'] <= filtro_solicitudes
         df_jobs = df_jobs[mask2]
+    st.write(df_jobs)
 
     if df_jobs.shape[0] == 0:
         st.warning('No existen empresas')
