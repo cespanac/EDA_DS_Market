@@ -1,1 +1,1 @@
-https://github.com/cespanac/EDA_DS_Market_Research.git
+https://github.com/cespanac/ds_job_market_research
