@@ -3,7 +3,7 @@
 ## Dog Breed Identification
 Este proyecto tiene el objetivo de crear un predictor que trate de acertar la raza de un perro entre las 120 que se han entrenado con el modelo de Machine Learning.
 
-Para los datos de entrenamiento se han utilizado más de 10.000 imágenes recolectadas de [kaggle](https://www.kaggle.com/c/dog-breed-identification/data)
+Para los datos de entrenamiento se han utilizado más de 10.000 imágenes recolectadas de [kaggle](https://www.kaggle.com/c/dog-breed-identification/data).
 
 ### Etapas:
 Para tal fin, se han realizado varios modelos de prueba, recogidos en el notebook:

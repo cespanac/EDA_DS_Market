@@ -19,6 +19,8 @@ st.image(img_header, use_column_width='auto')
 st.markdown('''### ¡Aquí podrás averiguar que tipo de raza es cualquier perro!''')
 st.markdown('''##### Solo tienes que cargar la imagen y automáticamente te dirá la raza y una breve descripción.''')
 
+st.write("#")
+
 with st.beta_expander('Pincha aquí si quieres saber más acerca del algoritmo.'):
     st.markdown('''Este predictor se ha hecho mediante Transfer learning, con un dataset de Kaggle.
                 El modelo final, está entrenado sobre Xception (Extreme Inception).
@@ -67,8 +69,3 @@ st.write(desc_breed)
 st.write('Ejemplo de la imagen predicha por el algoritmo:')
 img_breed = Image.open('dogs_photos/' + pred.astype('str') + '.jpg')
 st.image(img_breed, use_column_width='auto')
-
-
-
-
-
