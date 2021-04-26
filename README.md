@@ -3,14 +3,17 @@
 ## Dog Breed Identification
 Este proyecto tiene el objetivo de crear un predictor que trate de acertar la raza de un perro entre las 120 que se han entrenado con el modelo de Machine Learning.
 
+Para los datos de entrenamiento se han utilizado más de 10.000 imágenes recolectadas de [kaggle](https://www.kaggle.com/c/dog-breed-identification/data)
+
 ### Etapas:
 Para tal fin, se han realizado varios modelos de prueba, recogidos en el notebook:
+
 1. Se ha intentado a través de cargar y preprocesar en memoria las imágenes y sin partir de modelos preentrenados. Finalmente se ha descartado debido al bajo accuracy conseguido.
 2. Una vez probados varios modelos con resultados que llegaban al 20 % como máximo, se decidió utilizar Transfer Learning. Concretamente VGG16, Inception V3 y Xception, siendo este último el que mejor resultado ha dado, llegando a un 78% y con margen de mejora.
 3. Se ha creado para la presentación una página en streamlit, donde el usuario puede cargar una imagen para identificarla. Declarando el nombre del perro y una breve descripción.
 
 
-##EDA
+## EDA
 Este EDA tiene la finalidad de intentar entender el mercado laboral de Data Analyst y Data Scientist.
 
 Para esta ocasión se ha determinado buscar el dataset a través de la red social LinkedIn, creando una base de datos para posteriormente analizarla y sacar las conclusiones.
